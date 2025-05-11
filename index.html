@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para la Mejor Mamá del Mundo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="funcion.js"></script>
+</head>
+<body>
+ <div class="main-container">
+    <header>Para la mejor mamá del mundo 🌸</header>
+
+        <div class="carrusel">
+        <div class="carrusel-imagenes" id="carrusel-imagenes">
+            <img src="img1.jpg" alt="Recuerdo 1 con mamá">
+            <img src="img2.jpg" alt="Recuerdo 2 con mamá">
+            <img src="img3.jpg" alt="Recuerdo 3 con mamá">
+        </div>
+        <button class="carrusel-btn prev" onclick="cambiarImagen(-1)">❮</button>
+        <button class="carrusel-btn next" onclick="cambiarImagen(1)">❯</button>
+        </div>
+        <div class="mensaje">
+            Mamá, cada momento contigo es un tesoro. Gracias por llenar nuestras vidas de amor, alegría y dulzura. <br>
+            Este regalo es solo una pequeña muestra del cariño infinito que te tenemos.
+        </div>
+
+        <button onclick="mostrarSorpresa()">Ver Sorpresa</button>
+
+        <div id="sorpresa" class="sorpresa" style="display: none;">
+            <h2 class="mensaje-animado">¡Te queremos mucho, mamá! 💖</h2>
+            <p>Gracias por tu amor infinito. Eres nuestro mayor tesoro.</p>
+            <div class="corazones" id="corazones-container"></div>
+            <audio id="audioSorpresa" src="musica.mp3"></audio>
+        </div>
+ </div>
+  <footer>&copy; 2025 Con amor, tu familia.</footer>
+</body>
+</html>
